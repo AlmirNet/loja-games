@@ -1,0 +1,15 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background-image: url(///projeto-angular/loja-games/src/assets/img/);
+}
+
+#section-login{
+    height: 100%;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
