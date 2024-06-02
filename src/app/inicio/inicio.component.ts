@@ -18,7 +18,21 @@ export class InicioComponent implements OnInit{
   }
 
   listarProdutos():void{
-    this._produtoService.getProduto
+    this._produtoService.getProdutos().subscribe(
+      retornaProduto =>{
+        this.produtos = retornaProduto.map(
+          item => {
+            return new produto(
+              item.id,
+              item.produto,
+              item.descricao,
+              item.foto,
+              item.preco
+            );
+          }
+        )
+      }
+    )
   }
 
 }
